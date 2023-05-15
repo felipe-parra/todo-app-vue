@@ -1,68 +1,72 @@
 # todo-app with Vue 3
 
-This template should help get you started developing with Vue 3 in Vite.
+<br />
+<div align="center">
+  <a href="https://github.com/felipe-parra/todo-app-vue">
+    <img src="https://github.com/felipe-parra/todo-app-vue/blob/master/public/favicon.ico" alt="Logo" width="auto" height="30">
+  </a>
 
-## Recommended IDE Setup
+  <h2 align="center">Todo App</h2>
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+  <p align="center">
+  Developed by Felipe Parra with ❤️
+    <br />
+    <a href="https://github.com/felipe-parra/todo-app-vue"><strong>Explore docs</strong></a>
+    <br />
+    <br />
+    <a href="https://todo-apps-7d929.web.app/todos">View Demo</a>
+    ·
+    <a href="https://github.com/felipe-parra/todo-app-vue/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/felipe-parra/todo-app-vue/issues">Request feature</a>
+  </p>
+</div>
 
-## Type Support for `.vue` Imports in TS
+## 🚀 Getting Start
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+To have a local copy and run the project, follow these simple steps.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+1. Clone the repository
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+   ```sh
+   git clone https://github.com/felipe-parra/todo-app-vue.git
+   ```
 
-## Customize configuration
+2. Install project packages
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+   ```sh
+   npm install
+   ```
 
-## Project Setup
+### ☕ Start the project in local - Development mode
 
-```sh
-npm install
+1.  Start the development server
+
+    ```
+    npm run dev
+    ```
+
+2.  Go to the following address:
+    ```
+    http://localhost:5173
+    ```
+
+<!-- ### ☕ Initial database data
+
+1. Running the seeder
+
+  Note: it is important to understand that the seeder is going to insert initial data, and there may be conflicts with previously created initial data that has been modified.
+
+    ```
+    npm run seed
+    ``` -->
+
+### 😄 Usual problems
+
+- When installing `node_modules`, there can commonly be problems installing the packages either due to cache or incomplete downloads due to internet connection problems.
+
+_It can be solved by deleting the `node_modules` folder, and downloading them again:_
+
 ```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
-npm run test:e2e:dev
-```
-
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
-
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
-
-```sh
-npm run build
-npm run test:e2e
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
+rm -rf node_modules
 ```
