@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import todoRouter from '@/modules/todos/router'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
       path: '/',

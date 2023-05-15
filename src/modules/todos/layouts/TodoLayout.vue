@@ -1,24 +1,28 @@
 <template>
   <!-- Navbar -->
-  <NavbarDefault />
+  <Navbar />
   <!-- Loading -->
   <!-- Main content -->
-  <section>
+  <section class="d-flex">
     <!-- Page title -->
+    <article class="col-5">
+      <TodosList />
+    </article>
     <!-- Page content -->
-    <h1>Content</h1>
-    <RouterView />
+    <article class="col">
+      <RouterView />
+    </article>
   </section>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue';
-import NavbarDefault from '../components/NavbarDefault.vue';
+import { defineComponent, defineAsyncComponent } from 'vue';
 
 export default defineComponent({
   name: 'HomeView',
   components: {
-    NavbarDefault,
-  },
+    Navbar: defineAsyncComponent(() => import(/* webpackChunkName:"Navbar" */'@/modules/todos/components/NavbarDefault.vue')),
+    TodosList: defineAsyncComponent(() => import(/* webpackChunkName:"TodosList" */'@/modules/todos/components/TodosList.vue')),
+},
 });
 
 </script>
