@@ -14,7 +14,7 @@
     <a href="https://github.com/felipe-parra/todo-app-vue"><strong>Explore docs</strong></a>
     <br />
     <br />
-    <a href="https://todo-apps-7d929.web.app/todos">View Demo</a>
+    <a href="https://todo-apps-7d929.web.app/todos" style="font-size:1.2rem;">View Demo</a>
     ·
     <a href="https://github.com/felipe-parra/todo-app-vue/issues">Report Bug</a>
     ·
@@ -50,16 +50,6 @@ To have a local copy and run the project, follow these simple steps.
     ```
     http://localhost:5173
     ```
-
-<!-- ### ☕ Initial database data
-
-1. Running the seeder
-
-  Note: it is important to understand that the seeder is going to insert initial data, and there may be conflicts with previously created initial data that has been modified.
-
-    ```
-    npm run seed
-    ``` -->
 
 ### 😄 Usual problems
 
